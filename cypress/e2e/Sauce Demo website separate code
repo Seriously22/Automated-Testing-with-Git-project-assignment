@@ -1,0 +1,12 @@
+const url = 'https://www.saucedemo.com/';  //need to call a function into a function??
+const validUsername = 'standard_user';
+const validPassword = 'secret_sauce';
+
+
+describe('Testing the website' , () => {
+    it('should report all bugs' , () => {
+
+launchApplication('url');
+cy.visit(url);
+    })
+})
