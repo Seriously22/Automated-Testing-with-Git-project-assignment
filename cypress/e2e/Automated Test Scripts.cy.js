@@ -50,4 +50,5 @@ cy.visit(url);
     cy.get('.MuiTypography-root MuiTypography-label css-iffhsr').click();
     cy.get('#PlayArrowIcon').click();
     }
-    }
+    });
+});
