@@ -16,7 +16,7 @@ describe('Testing timer alert' , function () => {
     cy.visit(url);
     // click on submit button to produce the alert pop up
 //       cy.get('input[type="submit"]').click();
-
+})
 describe('Confirm alert' , function () => {
         // test case
         it('blocks alerts' , function () => {
@@ -26,3 +26,6 @@ describe('Confirm alert' , function () => {
 //       cy.get('input[type="submit"]').click();
     });
  });
+})
+    })
+
