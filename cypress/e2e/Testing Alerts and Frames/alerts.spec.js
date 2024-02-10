@@ -14,6 +14,7 @@ describe('Handling Alerts in Cypress' , function () {
         //cy.visit(url);
         //cy.get('#alertButton').click();
         })
+    })
     it('timer alert' , function () {
         cy.get('#timerAlertButton').click();
         cy.on('window:timer' , (timerText) => {
@@ -26,18 +27,19 @@ describe('Handling Alerts in Cypress' , function () {
         //cy.visit(url);
         //cy.get('#timerAlertButton').click();
         })
+    })
     it('confirm alert OKAY' , function () {
         cy.get('#confirmButton').click();
         cy.on('window:confirm' , (acceptConfirm) => {
         expect(acceptConfirm).to.contains('Do you confirm action?');
         })
+    })
     it('confirm alert Cancel' , function () {
         cy.on('window:confirm' , (cancelConfirm) => {
         return false;
         cy.get('#confirmButton').click();
         cy.get('#confirmResult').should('contain.text' , 'You selected Cancel');
-        })   
+        }) 
  })
 })
- })
-})
+
