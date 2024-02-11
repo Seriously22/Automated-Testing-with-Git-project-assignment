@@ -1,13 +1,13 @@
 const url = 'https://demoqa.com/alerts';
 
 
-describe('Handling Alerts in Cypress' , function () {
-    
-    it('basic alert' , function () {   // test case
-        cy.visit(url);           
+describe('Handling Alerts in Cypress', function () {
+
+    it('basic alert', function () {   // test case
+        cy.visit(url);
         cy.get('#alertButton').click();
-        cy.on('window:alert' , (alertText) => {   // trigger alert message
-        expect(alertText).to.contains('You clicked a button');  // assertion
+        cy.on('window:alert', (alertText) => {   // trigger alert message
+            expect(alertText).to.contains('You clicked a button');  // assertion
         //ERROR HANDLING   
         //cy.on('uncaught:exception' , (err, runnable) => {
         //    return false
