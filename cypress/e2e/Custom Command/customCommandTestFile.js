@@ -2,12 +2,12 @@ describe('Website login, navigation, and check out cart' , ()=> {
 })
     it('should navigate to website, log in, search for products, go to checkout cart' , () => {
         })
-    Cypress.Commands.add(login , (username, password) => {
+Cypress.Commands.add(login , (username, password) => {
 
 })
 
 //Validation of successful login        
-if (cy.url() === "https://www.saucedemo.com/inventory.html") {
+if (cy.url() ==="https://www.saucedemo.com/inventory.html") {
     cy.type(successfulLogin);
 
 } else {

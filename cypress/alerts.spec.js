@@ -10,7 +10,7 @@ describe('Handling Alerts in Cypress', function () {
             expect(alertText).to.contains('You clicked a button');  // assertion
         //ERROR HANDLING   
         //cy.on('uncaught:exception' , (err, runnable) => {
-        //    return false
+        //   return false
         //cy.visit(url);
         //cy.get('#alertButton').click();
         })

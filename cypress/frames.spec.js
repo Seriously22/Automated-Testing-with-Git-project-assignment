@@ -26,4 +26,4 @@ describe('Handling Frames in Cypress', function () {
             cy.log(txtframe);
         })
     })
-})
+    
