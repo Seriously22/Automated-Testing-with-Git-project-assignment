@@ -19,8 +19,9 @@ describe('Handling Frames in Cypress', function () {
     it('nested frame', function () {
         cy.visit(url);
         //no locators provided
-        cy.frameLoaded('this site can't be reached');
-        cy.iframe().find('this site can't be reached').then(function(txt){  // gets hold of embedded webpage
+        cy.frameLoaded('this site can't be reached');    //no locators provided
+        // gets hold of embedded webpage
+        cy.iframe().find('this site can't be reached').then(function(txt){     // gets hold of embedded webpage
             const txtframe = txt.text();  
             expect(txtframe).to.contains('');  // assertion to verify text
             cy.log(txtframe);
