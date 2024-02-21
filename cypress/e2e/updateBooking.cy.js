@@ -11,4 +11,4 @@ describe('Update Booking for API', () => {
         "checkout" : "2019-01-01"
     },
     "additionalneeds" : "Breakfast"
-}'
+})'
