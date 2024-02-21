@@ -1,6 +1,6 @@
-describe('API Testing with Cypress', () => {
+describe('complete', () => {
 
-    it('should retrieve all booking IDs', () => {
+    it('complete', () => {
   
       cy.request('POST', 'https://restful-booker.herokuapp.com/booking')
   
