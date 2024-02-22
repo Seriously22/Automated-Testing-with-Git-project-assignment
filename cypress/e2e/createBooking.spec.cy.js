@@ -1,7 +1,7 @@
 describe('Create Booking for API', () => {
     it("POST booking information", () => {
         cy.request("POST", "https://restful-booker.herokuapp.com/booking"
-         { 
+        {
         "firstname" : "Jim",  //with or w/o "" for the title???
         "lastname" : "Brown",
         "totalprice" : 111,
@@ -20,3 +20,4 @@ describe('Create Booking for API', () => {
   
         });
       });
+    }) //added extra set of curly brackets and parentheses but line 4 still has error

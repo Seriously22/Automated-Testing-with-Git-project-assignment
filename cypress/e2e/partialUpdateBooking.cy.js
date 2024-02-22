@@ -13,4 +13,4 @@ describe('Partially update Booking information for API', () => {
 
   });
 });
-});
+})
