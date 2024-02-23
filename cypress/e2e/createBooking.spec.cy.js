@@ -2,7 +2,7 @@ describe('Create Booking for API', () => {
     it('POST booking information', () => {
       cy.request('POST', "https://restful-booker.herokuapp.com/booking",
         {
-        "firstname" : "Jim",  //with or w/o "" for the title???
+        "firstname" : "Jim",
         "lastname" : "Brown",
         "totalprice" : 111,
         "depositpaid" : true,
@@ -12,7 +12,7 @@ describe('Create Booking for API', () => {
         },
         "additionalneeds" : "Breakfast"
         })
-        .should((response) => {
+     .should((response) => {
   
           expect(response.status).to.eq(200);
   
