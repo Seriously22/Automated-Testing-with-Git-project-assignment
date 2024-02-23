@@ -1,6 +1,6 @@
 describe('Create Booking for API', () => {
-    it("POST booking information", () => {
-        cy.request("POST", "https://restful-booker.herokuapp.com/booking"
+    it('POST booking information', () => {
+      cy.request('POST', "https://restful-booker.herokuapp.com/booking",
         {
         "firstname" : "Jim",  //with or w/o "" for the title???
         "lastname" : "Brown",
@@ -19,5 +19,5 @@ describe('Create Booking for API', () => {
           expect(response.body).to.have.length.greaterThan(0);
   
         });
-      });
-    }) //added extra set of curly brackets and parentheses but line 4 still has error
+          });
+           })  //added extra set of curly brackets and parentheses but line 4 still has error
