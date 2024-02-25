@@ -6,7 +6,7 @@ describe('Partially update Booking information for API', () => {
         "lastname" : "Brown"
         }) .should((response) => {
           expect(response.status).to.eq(200);
-          expect(response.body.booking).to.not.be.empty; //error: Status 403 Forbidden
+          expect(response.body).to.have.length.greaterThan(0); //error: Status 403 Forbidden
     });
 });
 })
