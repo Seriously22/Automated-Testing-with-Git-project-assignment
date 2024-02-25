@@ -16,7 +16,7 @@ describe('Create Booking for API', () => {
   
           expect(response.status).to.eq(200);
   
-          expect(response.body).to.have.length.greaterThan(0);
+          expect(response.body.booking).to.not.be.empty;
   
         });
           });
