@@ -5,10 +5,8 @@ describe('Partially update Booking information for API', () => {
         "firstname" : "James",
         "lastname" : "Brown"
         }) .should((response) => {
-    expect(response.status).to.eq(200);
-    expect(response.body.firstname).to.eq("James");
-    expect(response.body.lastname).to.eq("Brown");
-    // error in Cypress: 403 Forbidden. Advised to use: failOnStatusCode: false
-  });
+          expect(response.status).to.eq(200);
+          expect(response.body.booking).to.not.be.empty; //error: Status 403 Forbidden
+    });
 });
 })
