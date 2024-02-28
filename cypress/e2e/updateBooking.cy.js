@@ -1,6 +1,6 @@
 describe('Update Booking for API', () => {
     it('should use PUT for updating booking information', () => {
-        cy.request('PUT','https://restful-booker.herokuapp.com/booking/:id)',
+        cy.request('PUT','https://restful-booker.herokuapp.com/booking/550',
         {            
            "firstname" : "James",
            "lastname" : "Brown",

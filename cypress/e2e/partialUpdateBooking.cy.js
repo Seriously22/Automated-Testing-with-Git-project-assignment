@@ -10,7 +10,7 @@ describe('Partially update Booking information for API', () => {
         //created token in Postman
         //error: Status 403 Forbidden in Cypress
         //Forbiden in Postman
-    }); //per instructor, status code for PATCH is not '200', but Cypress states failure due to
-        //status code not being 2xx or 3xx.
+    }); //Failure on status code (200); per instructor, status code for PATCH is not '200', 
+        //but Cypress states failure due to status code not being 2xx or 3xx.
         });
 })

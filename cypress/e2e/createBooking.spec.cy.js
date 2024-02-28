@@ -1,7 +1,17 @@
 describe('Create Booking for API', () => {
     it('POST booking information', () => {
-      cy.request('POST', "https://restful-booker.herokuapp.com/booking",
-        {
+      cy.request({
+        method:'GET',
+        url: 'https://restful-booker.herokuapp.com/auth',
+        headers: {
+          'Authentication': 'Bearer ${tokens}'
+        }
+        }).then((response) =>{
+      
+      cy.request({
+        method: 'POST',
+        url: 'https://restful-booker.herokuapp.com/booking',
+        body:{
         "firstname" : "Jim",
         "lastname" : "Brown",
         "totalprice" : 111,
@@ -11,8 +21,8 @@ describe('Create Booking for API', () => {
         "checkout" : "2019-01-01"
         },
         "additionalneeds" : "Breakfast"
-        })
-     .should((response) => {
+        }
+      }).should((response) => {
   
           expect(response.status).to.eq(200);
   
@@ -20,4 +30,5 @@ describe('Create Booking for API', () => {
   
         });
           });
-           })
+           });
+          });
