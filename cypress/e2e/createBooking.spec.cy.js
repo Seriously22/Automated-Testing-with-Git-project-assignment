@@ -17,8 +17,8 @@ describe('Create Booking for API', () => {
         "totalprice" : 111,
         "depositpaid" : true,
         "bookingdates" : {
-        "checkin" : "2018-01-01",
-        "checkout" : "2019-01-01"
+            "checkin" : "2018-01-01",
+            "checkout" : "2019-01-01"
         },
         "additionalneeds" : "Breakfast"
         }

@@ -1,5 +1,13 @@
 describe('Partially update Booking information for API', () => {
     it('PATCH for updating booking information', () => {
+      cy.request({
+        method:'GET',
+        url: 'https://restful-booker.herokuapp.com/auth',
+        headers: {
+          'Authentication': 'Bearer ${tokens}'
+        }
+      }).then((response) =>{
+
      cy.request('PATCH', 'https://restful-booker.herokuapp.com/booking/550', //change id of John Smith to...
       {
         "firstname" : "James",
@@ -10,7 +18,9 @@ describe('Partially update Booking information for API', () => {
         //created token in Postman
         //error: Status 403 Forbidden in Cypress
         //Forbiden in Postman
-    }); //Failure on status code (200); per instructor, status code for PATCH is not '200', 
+        //Failure on status code (200); per instructor, status code for PATCH is not '200', 
         //but Cypress states failure due to status code not being 2xx or 3xx.
         });
-})
+        });
+        });
+        });
