@@ -28,4 +28,4 @@ describe('Update Booking for API', () => {
       });
       });
       });
-      });
+      });// error 404 not found, failOnStatusCode
