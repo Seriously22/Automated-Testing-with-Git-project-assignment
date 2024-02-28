@@ -8,7 +8,7 @@ describe('Partially update Booking information for API', () => {
         }
       }).then((response) =>{
 
-     cy.request('PATCH', 'https://restful-booker.herokuapp.com/booking/550', //change id of John Smith to...
+     cy.request('PATCH', 'https://restful-booker.herokuapp.com/booking/550', //change John Smith to...
       {
         "firstname" : "James",
         "lastname" : "Brown"
