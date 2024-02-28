@@ -1,5 +1,12 @@
 describe('Update Booking for API', () => {
     it('should use PUT for updating booking information', () => {
+      cy.request({
+        method:'GET',
+        url: 'https://restful-booker.herokuapp.com/auth',
+        headers: {
+          'Authentication': 'Bearer ${tokens}'
+        }
+      }).then((response) =>{
         cy.request('PUT','https://restful-booker.herokuapp.com/booking/550',
         {            
            "firstname" : "James",
@@ -18,6 +25,7 @@ describe('Update Booking for API', () => {
 
        expect(response.body).to.have.length.greaterThan(0);
 
-       });
-     });
-    });
+      });
+      });
+      });
+      });
