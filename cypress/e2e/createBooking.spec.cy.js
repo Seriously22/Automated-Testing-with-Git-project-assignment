@@ -31,4 +31,4 @@ describe('Create Booking for API', () => {
         });
           });
            });
-          });
+          });//error Status 404 not found, failOnStatusCode
