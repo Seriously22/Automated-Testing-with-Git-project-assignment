@@ -4,14 +4,14 @@ describe('Partially update Booking information for API', () => {
         method:'GET',
         url: 'https://restful-booker.herokuapp.com/auth',
         headers: {
-          'Authentication': 'Bearer ${tokens}'
+           'Authentication': 'Bearer' + tokens,
         }
       }).then((response) =>{
 
      cy.request('PATCH', 'https://restful-booker.herokuapp.com/booking/550', //change John Smith to...
       {
-        "firstname" : "James",
-        "lastname" : "Brown"
+          "firstname" : "James",
+          "lastname" : "Brown"
         }) .should((response) => {
           expect(response.status).to.eq(200);
           expect(response.body).to.have.length.greaterThan(0);
