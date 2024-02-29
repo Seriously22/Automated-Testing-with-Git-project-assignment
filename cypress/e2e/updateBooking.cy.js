@@ -20,7 +20,7 @@ describe('Update Booking for API', () => {
           },
            "additionalneeds" : "Breakfast"
           })
-    .should((response) => {
+      .should((response) => {
   
        expect(response.status).to.eq(200);
 
