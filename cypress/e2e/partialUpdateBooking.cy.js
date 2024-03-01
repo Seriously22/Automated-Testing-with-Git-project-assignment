@@ -1,5 +1,5 @@
 describe('Partially update Booking information for API', () => {
-    let tokens ; null;
+    let tokens = null;
     it('PATCH for updating booking information', () => {
     cy.request({
         method: 'PATCH',
@@ -8,14 +8,15 @@ describe('Partially update Booking information for API', () => {
                "firstname" : "James",
                "lastname" : "Brown"
               }
-                                                  //headers: { ' Authorization ' : ' Token ' + token }  -OR-
-                                                  //headers: Authorization: 'Bearer' + tokens,       
+                                                  /*headers: { ' Authorization ' : ' Token ' + token }
+                                                    -OR-
+                                                  headers: Authorization: 'Bearer' + tokens,     */  
        })
-       }).then((response) =>{
-        tokens=response.body.tokens
-        cy.log('Bearer Token:' , tokens);
-       }) .should((response) => {
-          expect(response.status).to.eq(200);
-          expect(response.body).to.have.length.greaterThan(0);
-        });
-        });        
+      }).then((response) => {
+        tokens = response.body.tokens;
+        cy.log('Bearer Token:', tokens);
+        expect(response.status).to.eq(200);
+        expect(response.body.booking).to.not.be.empty;
+      });
+    });
+                                                //ERROR - it(...).then is not a function    
