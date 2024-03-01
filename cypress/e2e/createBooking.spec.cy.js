@@ -15,6 +15,8 @@ describe('Create Booking for API', () => {
               },
                "additionalneeds" : "Breakfast"
               }
+                                                       //headers: { ' Authorization ' : ' Token ' + token }  -OR-
+                                                       //headers: Authorization: 'Bearer' + tokens,
       })
       }).then((response) =>{
         tokens=response.body.tokens

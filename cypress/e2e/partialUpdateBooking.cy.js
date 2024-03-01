@@ -8,6 +8,8 @@ describe('Partially update Booking information for API', () => {
                "firstname" : "James",
                "lastname" : "Brown"
               }
+                                                  //headers: { ' Authorization ' : ' Token ' + token }  -OR-
+                                                  //headers: Authorization: 'Bearer' + tokens,       
        })
        }).then((response) =>{
         tokens=response.body.tokens
@@ -16,5 +18,4 @@ describe('Partially update Booking information for API', () => {
           expect(response.status).to.eq(200);
           expect(response.body).to.have.length.greaterThan(0);
         });
-        });
-        //error Status 404 not found, failedOnStatusCode
+        });        
