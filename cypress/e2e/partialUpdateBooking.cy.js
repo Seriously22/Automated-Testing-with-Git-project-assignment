@@ -19,4 +19,5 @@ describe('Partially update Booking information for API', () => {
         expect(response.body.booking).to.not.be.empty;
       });
     });
-                                                //ERROR - it(...).then is not a function    
+                                                //ERROR - it(...).then is not a function
+                                                //Advised to move forward, as website is producing issues    
