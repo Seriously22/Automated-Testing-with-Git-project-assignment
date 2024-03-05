@@ -9,4 +9,4 @@ describe('Delete Booking for API', () => {
 
   });
 });
-})
+})                       //PASSED  PASSED PASSED
