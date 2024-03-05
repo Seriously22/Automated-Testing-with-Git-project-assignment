@@ -31,7 +31,7 @@ it('PUT update contact', () => {
    },
  }).then((response) => {
    cy.log('API Response:', response);
-    expect (response.status).to.eq(200);
+    expect(response.status).to.eq(200);
     expect(response.body.booking).to.not.be.empty;
  });
 });/*ERRORS: PUT 405 https://...
