@@ -2,7 +2,11 @@ name: first_Workflow
 on: push
 jobs:
   first_Workflow:
-    runs-on: Windows - latet
+    runs-on: Windows-latet
     steps:
     - name: Checkout repository code
     - uses: actions/checkout@v4
+    - name: Build
+    - run: npm install
+    - name: Run tests
+    - run: npm test
