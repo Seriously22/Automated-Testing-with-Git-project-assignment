@@ -1,0 +1,13 @@
+name: firstWorkflow
+on: push
+jobs:
+  first_Workflow:
+    runs-on: Windows - latet
+    steps:
+      -name: Checkout repository code
+       uses: actions/checkout@v4.1.2
+  with:
+    Checkout repository code
+          
+    
+
