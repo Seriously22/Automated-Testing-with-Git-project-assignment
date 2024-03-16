@@ -2,8 +2,7 @@ name: first_Workflow
 on:
   push:
     inputs:
-        description:
-          description: "Greeting Message"
+        description: "Greeting Message"
         default: "Students"
         required: true
         type: string
