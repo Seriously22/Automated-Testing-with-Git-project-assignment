@@ -1,6 +1,16 @@
 name: first_Workflow
 on: push
+  inputs:
+  first_Workflow
+    - description: "Greeting Message"
+    - default: "Students"
+    - required: true
+    - type: string
 jobs:
+  greet:
+    steps:
+    - name: Send greeting
+    - run: echo "Hello ${{inputs.name}}
   first_Workflow:
     runs-on: Windows-latet
     steps:
@@ -10,3 +20,6 @@ jobs:
     - run: npm install
     - name: Run tests
     - run: npm test
+    
+    
+    
