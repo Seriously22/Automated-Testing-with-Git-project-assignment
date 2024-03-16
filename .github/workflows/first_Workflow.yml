@@ -16,6 +16,6 @@ jobs:
         run: echo "Hello ${{inputs.description}}"
       - name: Checkout repository code and allow tests to run
         uses: actions/checkout@v4
-      - name: Build
+      - name: Build and Test
         run: npm install
-      - name: Run tests
+             npm test
