@@ -1,7 +1,6 @@
 name: first_Workflow
 on: push
   inputs:
-  first_Workflow
     - description: "Greeting Message"
     - default: "Students"
     - required: true
