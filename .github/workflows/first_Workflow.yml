@@ -4,7 +4,7 @@ jobs:
   first_Workflow:
     runs-on: Windows-latet
     steps:
-    - name: Checkout repository code
+    - name: Checkout repository code and allow tests to run
     - uses: actions/checkout@v4
     - name: Build
     - run: npm install
