@@ -4,5 +4,5 @@ jobs:
   first_Workflow:
     runs-on: Windows - latet
     steps:
-      -name: Checkout repository code
-       uses: actions/checkout@v4
+    - name: Checkout repository code
+    - uses: actions/checkout@v4
