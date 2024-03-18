@@ -9,7 +9,7 @@ on:
         type: string
 
 jobs:
-  greet:
+  greet and test:
     runs-on: windows-latest
     steps:
       - name: Send greeting
