@@ -2,14 +2,15 @@ name: first_Workflow
 on:
   push:
     inputs:
-      description:
-        description: "Greeting Message"
+       description: "Greeting Message"
         default: "Students"
         required: true
         type: string
 
 jobs:
-  greet and test:
+  greet_and_test:
+   strategy:
+     matrix:
     runs-on: windows-latest
     steps:
       - name: Send greeting
