@@ -1,20 +1,16 @@
 name: first_Workflow
 on:
   push:
-    inputs:
-       description: "Greeting Message"
-        default: "Students"
-        required: true
-        type: string
-
+    
 jobs:
   greet_and_test:
    strategy:
      matrix:
+       message: ["Hello", "Goodbye"]
     runs-on: windows-latest
     steps:
       - name: Send greeting
-        run: echo "Hello ${{inputs.description}}"
+        run: echo ${{matrix.message}}"
       - name: Checkout repository code and allow tests to run
         uses: actions/checkout@v4
       - name: Build and Test
