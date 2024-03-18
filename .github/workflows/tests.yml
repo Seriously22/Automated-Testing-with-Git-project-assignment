@@ -7,8 +7,8 @@ jobs:
    strategy:
      matrix:
        message: ["Hello", "Goodbye"]
-    runs-on: windows-latest
-    steps:
+   runs-on: windows-latest
+   steps:
       - name: Send greeting
         run: echo ${{matrix.message}}"
       - name: Checkout repository code and allow tests to run
