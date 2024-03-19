@@ -6,11 +6,11 @@ jobs:
   greet_checkout_test:
    strategy:
      matrix:
-       message: ["Hello", "Goodbye"]
+       message: ["Students", "Instructors"]
    runs-on: windows-latest
    steps:
       - name: Send greeting
-        run: echo ${{matrix.message}}"
+        run: echo "Hello ${{matrix.message}}"
       - name: Checkout repository code and allow tests to run
         uses: actions/checkout@v4
       - name: Build and Test
