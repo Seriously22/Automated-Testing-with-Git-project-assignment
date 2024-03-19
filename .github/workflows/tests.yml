@@ -6,7 +6,8 @@ jobs:
   greet_checkout_test:
    strategy:
      matrix:
-       message: ["Students", "Instructors"]
+       "message": ["Students", "Instructors"]
+         
    runs-on: windows-latest
    steps:
       - name: Send greeting
