@@ -1,9 +1,9 @@
-name: first_Workflow
+name: tests
 on:
   push:
     
 jobs:
-  greet_and_test:
+  greet_checkout_test:
    strategy:
      matrix:
        message: ["Hello", "Goodbye"]
