@@ -1,8 +1,7 @@
 name: ZAP_Baseline_Scan
-on:  
-   push:
+on: push:
 jobs:
-   Security_Testing_Setup
+   Security_Testing_Setup:
    steps:
      - name: ZAP Scan
        uses: zaproxy/action-baseline@v0.11.0
