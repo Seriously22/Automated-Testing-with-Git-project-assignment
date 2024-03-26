@@ -1,0 +1,11 @@
+name: ZAP_Baseline_Scan
+on:  
+   push:
+jobs:
+   Security_Testing_Setup
+   
+   steps:
+     - name: ZAP Scan
+       uses: zaproxy/action-baseline@v0.11.0
+       with:
+          target: 'https://juice-shop.herokuapp.com/#'
