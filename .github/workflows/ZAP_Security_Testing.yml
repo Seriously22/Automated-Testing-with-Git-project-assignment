@@ -1,4 +1,4 @@
-name: ZAP_Baseline_Scan
+name: ZAP_Security_Testing
 on: push:
 jobs:
    Security_Testing_Setup:
