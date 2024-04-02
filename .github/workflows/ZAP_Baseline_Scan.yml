@@ -4,6 +4,7 @@ on:
 jobs:
    Security_Testing_Setup:
       runs-on: windows-latest
+      name: Juice Shop Website
       steps:
         - name: ZAP Scan
           uses: zaproxy/action-baseline@v0.11.0
