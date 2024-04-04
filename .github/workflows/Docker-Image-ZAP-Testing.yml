@@ -1,11 +1,11 @@
-name: Docker-Image-ZAP-Testing
+name: Docker_Image_ZAP_Testing
 on:
   push:
      branches: [ "main" ]
   pull_request:
      branches: [ "main" ]
 jobs:
-   Build-Docker-Image:
+   Build_Docker_Image:
      runs-on: Windows-latest
      steps:
        - uses: actions/checkout@v3
