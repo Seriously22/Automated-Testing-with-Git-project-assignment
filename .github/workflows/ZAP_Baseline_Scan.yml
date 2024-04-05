@@ -1,5 +1,6 @@
 name: ZAP_Baseline_Scan
-on: push:
+on: 
+   push:
 jobs:
    Security_Testing_Setup:
    steps:
